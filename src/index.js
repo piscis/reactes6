@@ -1,16 +1,14 @@
 import React from 'react';
+import KataGroups from './components/KataGroups.js'
 
 class Page extends React.Component {
 
   render() {
 
     const {groups} = this.props;
-    const groupNames = Object.keys(groups);
 
     return (
-      <ul>
-        {groupNames.map(name => <li>{name}</li>)}
-      </ul>
+      <KataGroups kataGroups={groups}></KataGroups>
     )
   }
 }

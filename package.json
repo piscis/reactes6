@@ -12,7 +12,8 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "build": "mkdir -p dist; npm run build:js; npm run build:html;",
+    "build": "mkdir -p dist; npm run build:js; npm run build:html; npm run build:vendor;",
+    "build:vendor": "cp -r vendor/pure-layout-email/css dist/ && cp -r vendor/pure-layout-email/img dist/",
     "build:watch": "chokidar 'src' -c 'npm run build'",
     "build:html": "cp src/index.html dist",
     "build:js": "browserify src/index.js --outfile=dist/index.js --transform=babelify",
