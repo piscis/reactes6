@@ -8,7 +8,7 @@
   , "url" : "git@github.com:piscis/reactes6.git"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha"
+    "test": "mocha"
   },
   "author": "Alexander Pirsig",
   "license": "MIT",
