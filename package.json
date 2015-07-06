@@ -8,7 +8,7 @@
     "url": "git@github.com:piscis/reactes6.git"
   },
   "scripts": {
-    "test": "mocha"
+    "test": "mocha --compilers js:babel-core/register"
   },
   "author": "Alexander Pirsig",
   "license": "MIT",
