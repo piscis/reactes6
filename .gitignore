@@ -3,3 +3,4 @@ reactes6.iml
 node_modules
 index.min.js
 dist
+npm-debug.log
