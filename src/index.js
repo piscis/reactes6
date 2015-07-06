@@ -4,13 +4,12 @@ class Page extends React.Component {
 
   render() {
 
+    const {groups} = this.props;
+    const groupNames = Object.keys(groups);
+
     return (
       <ul>
-        <li>Item 1</li>
-        <li>Item 2</li>
-        <li>Item 3</li>
-        <li>Item 4</li>
-        <li>Item 5</li>
+        {groupNames.map(name => <li>{name}</li>)}
       </ul>
     )
   }
