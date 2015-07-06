@@ -6,8 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Alexander Pirsig",
+  "license": "MIT",
   "devDependencies": {
     "mocka": "0.0.1"
   }
