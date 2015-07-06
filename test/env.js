@@ -1,4 +1,4 @@
-var assert = require('assert');
+import assert from 'assert';
 
 describe('Environment test', function(){
 
@@ -51,9 +51,8 @@ describe('loading JSON from server', function(){
 
 });
 
-
-var http = require('http');
-var url = require('url');
+import http from 'http';
+import url from 'url';
 
 function loadRemoteFile(fileUrl, onLoaded) {
 
