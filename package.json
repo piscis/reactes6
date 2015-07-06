@@ -12,13 +12,20 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "build": "browserify src/index.js --outfile=src/index.min.js --transform=babelify"
+    "build": "mkdir -p dist; npm run build:js; npm run build:html;",
+    "build:watch": "chokidar 'src' -c 'npm run build'",
+    "build:html": "cp src/index.html dist",
+    "build:js": "browserify src/index.js --outfile=dist/index.js --transform=babelify",
+    "postbuild:js": "uglifyjs dist/index.js -m -c > dist/index.min.js && rm dist/index.js"
   },
   "author": "Alexander Pirsig",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^5.6.15",
-    "mocha": "^2.2.5"
+    "chokidar": "^1.0.3",
+    "chokidar-cli": "^0.3.0",
+    "mocha": "^2.2.5",
+    "uglifyjs": "^2.4.10"
   },
   "dependencies": {
     "babelify": "^6.1.2",
