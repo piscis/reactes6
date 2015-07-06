@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "browser": {
+    "react": "./src/shim/react.js"
+  },
   "repository": {
     "type": "git",
     "url": "git@github.com:piscis/reactes6.git"
