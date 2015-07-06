@@ -8,7 +8,7 @@
   , "url" : "git@github.com:piscis/reactes6.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "./node_modules/.bin/mocha"
   },
   "author": "Alexander Pirsig",
   "license": "MIT",
