@@ -12,6 +12,7 @@ React TDD ES6 Workshop
   * [Unit testing react components without a dom](http://simonsmith.io/unit-testing-react-components-without-a-dom/)
   * [React router presentation](https://www.youtube.com/watch?v=XZfvW1a8Xac)
 
-### Libs:
+### Libs & helpers:
 
   * [setup-referee-sinon](https://github.com/davidaurelio/setup-referee-sinon)
+  * [classnames](https://www.npmjs.com/package/classnames)
