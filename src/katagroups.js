@@ -1,6 +1,9 @@
+import KataGroup from './katagroup.js'
+
 export default class KataGroups {
 
   static fromRawKataData(rawGroups) {
+
     let kataGroups = new KataGroups();
     kataGroups.groups = Object
       .keys(rawGroups)
@@ -32,12 +35,4 @@ export default class KataGroups {
     this.selectedKata = void 0;
   }
 
-}
-
-class KataGroup {
-  constructor(name, items) {
-    this.name = name;
-    this.katasCount = items.length;
-    this.katas = items;
-  }
 }
