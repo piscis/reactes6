@@ -13,7 +13,7 @@ class Page extends React.Component {
   }
 }
 
-import JSONLoader from './JSONLoader.js';
+import JSONLoader from './_external-deps/Loader.js';
 
 const url = 'http://katas.tddbin.com/katas/es6/language/__grouped__.json';
 
