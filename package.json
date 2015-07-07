@@ -18,7 +18,7 @@
     "build:watch": "chokidar 'src' -c 'npm run build'",
     "build:html": "cp src/index.html dist",
     "build:static": "cp src/favicon.ico dist",
-    "build:js": "browserify src/index.js --outfile=dist/index.min.js --transform=babelify",
+    "build:js": "browserify src/index.js --outfile=dist/index.js --transform=babelify",
     "postbuild:js": "uglifyjs dist/index.js -m -c > dist/index.min.js",
     "serve": "http-server ./dist"
   },
