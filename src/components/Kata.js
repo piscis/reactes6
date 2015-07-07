@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class KataDetails extends React.Component {
+export default class Kata extends React.Component {
 
   render() {
 
