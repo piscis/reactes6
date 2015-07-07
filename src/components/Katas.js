@@ -1,6 +1,6 @@
 import React from 'react';
 
-export default class KataSubnavigation extends React.Component {
+export default class Katas extends React.Component {
 
 
   render() {

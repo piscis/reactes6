@@ -7,7 +7,7 @@ export default class RawKataData {
 
   load(onError, onSuccess) {
 
-    this.loadRemoteFile('', (err, data) => {
+    this.loadRemoteFile(this.url, (err, data) => {
 
       if (err) {
         onError(err);
@@ -16,11 +16,11 @@ export default class RawKataData {
         try {
           parsed = JSON.parse(data);
         } catch (e) {
-          onError();
+          onError('JSON parsing error');
           return;
         }
         if (!('groups' in parsed)) {
-          onError();
+          onError(new Error('Wrong format'));
         } else {
           onSuccess(parsed);
         }

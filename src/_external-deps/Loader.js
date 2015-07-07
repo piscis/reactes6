@@ -1,7 +1,7 @@
 import http from 'http';
 import url from 'url';
 
-export class Loader {
+export default class Loader {
 
   static loadRemoteFile(fileUrl, onLoaded) {
 
