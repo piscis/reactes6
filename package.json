@@ -12,11 +12,12 @@
   },
   "scripts": {
     "test": "mocha --compilers js:babel-core/register",
-    "build": "mkdir -p dist; npm run build:js; npm run build:html; npm run build:vendor;",
+    "build": "mkdir -p dist; npm run build:js; npm run build:html; npm run build:vendor; npm run build:static;",
     "build:vendor": "cp -r vendor/pure-layout-email/css dist/ && cp -r vendor/pure-layout-email/img dist/",
     "build:watch": "chokidar 'src' -c 'npm run build'",
     "build:html": "cp src/index.html dist",
-    "build:js": "browserify src/index.js --outfile=dist/index.js --transform=babelify",
+    "build:static": "cp src/favicon.ico dist",
+    "build:js": "browserify src/index.js --outfile=dist/index.min.js --transform=babelify",
     "postbuild:js": "uglifyjs dist/index.js -m -c > dist/index.min.js",
     "serve": "http-server ./dist"
   },
