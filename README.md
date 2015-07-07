@@ -1,4 +1,5 @@
 # REACT TDD ES6
+
 React TDD ES6 Workshop
 
 
@@ -10,3 +11,7 @@ React TDD ES6 Workshop
   * [ReactJS + browserify (Part2)](http://christianalfoni.github.io/javascript/2014/10/30/react-js-workflow-part2.html)
   * [Unit testing react components without a dom](http://simonsmith.io/unit-testing-react-components-without-a-dom/)
   * [React router presentation](https://www.youtube.com/watch?v=XZfvW1a8Xac)
+
+### Libs:
+
+  * [setup-referee-sinon](https://github.com/davidaurelio/setup-referee-sinon)
