@@ -1,3 +1,13 @@
 language: node_js
 node_js:
   - "0.10"
+
+after_success:
+  - chmod +x ./scripts/*.sh
+  - chmod +x ./scripts/for-travis/*.sh
+  - ./scripts/for-travis/build-and-deploy.sh
+
+env:
+ global:
+ - GH_REF: github.com/piscis/reactes6.git
+ - secure: thh/M1F9eLo23/c5Fpz2Rvcf9hHKCnYKUISZFDltNK6qzfASqMBiKr0aCnHuEJ27B/YTtALOUeLlwLwm08yPMFyIQDmz5HCW9HXjh2O64G0uvBW+urYrQZ6La9if54GZZCEZvL6mv0BAPN2y3IlqxViX+mpFdW6IswuO3APnKB918cKDpdg64ybws85yxQqw75K/2a2u2cvEoq3zyOrz3d5KvMXy/ZZWkt5BeBDNNPMYH6SGpZoxHEZLZE5L4biP2WNcoTS4CzlajxVDWlrQ+BS9+xjRWPPtoiz3RgiL5HuRySkkR5kDLZFfHZWi/MQjW1ivv+MCXhl58N5KfNz48wUnzo5NDh5IXvrGP2SRbS6dJ68DbZjxkb6MQZwDWAE789J8x1ptN5fsiHYqFIapJ5aKG5AQ/bUHa4ijU6lfjvQDTWIb3vb0JOtTbfWhZk0kb7HisyJHFTwpavDcLkihC5zf7QIgvk72v2t3WvxTJxyYRszd7oKnoUZAxl88IW0kwvcPvUv8Ief3hNEixUSmeJdOecu+wtpHWGKYRV5K2FsiFIVW+oL+lW+j34EMQTwlZ5HFu89KOgV4VstVtlR+O06bek6cM2GRAOTFAqR24p/VBZeaoaDPBBmXALj4P3rc7kkrBblDC6HvAh2BGuIEGzL+ger8WzwRUM5SYK3Ro6c=
