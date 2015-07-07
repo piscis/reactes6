@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "private": true,
   "browser": {
     "react": "./src/shim/react.js"
   },
